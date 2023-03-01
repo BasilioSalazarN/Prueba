@@ -3,11 +3,7 @@ import numpy as np
 import streamlit as st
 import pandas as pd
 from datetime import datetime
-import pytz
-import plotly.graph_objects as go
-import plotly.express as px
 from urllib.parse import urlparse
-uri=st.secrets.db_credentials.URI
 
 uri=st.secrets.db_credentials.URI
 result = urlparse(uri)
