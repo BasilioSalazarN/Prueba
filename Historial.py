@@ -31,7 +31,8 @@ fecha_r=data_2_r.iloc[:,0]
 fecha_c=data_2_c.iloc[:,0]
 fecha_o=data_2_o.iloc[:,0]
 
-nombre= nombre_r + nombre_c + nombre_o
+nombre= nombre_r.append(nombre_c)
+nombre= nombre.append(nombre_o)
 
 d = {'col1':nombre}
 df = pd.DataFrame(data=d)
