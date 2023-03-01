@@ -12,7 +12,7 @@ database = result.path[1:]
 username = result.username
 pwd = result.password
 port_id = result.port
-con = psycopg2-binary.connect(host=hostname,dbname= database,user= username,password=pwd,port= port_id)
+con = psycopg2.connect(host=hostname,dbname= database,user= username,password=pwd,port= port_id)
 
 data_1_r=pd.read_sql(f"select cast(id as integer),marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,cast(predios as integer),cast(horas as float) from registro", con)
 data_2_r = data_1_r.groupby(["nombre", "fecha"], as_index=False)["horas"].agg(np.sum)
