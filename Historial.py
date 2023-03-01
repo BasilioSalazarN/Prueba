@@ -1,8 +1,7 @@
-# ----- Librerías ---- #
 import numpy as np
 import streamlit as st
 import pandas as pd
-from datetime import datetime
+import psycopg2
 from urllib.parse import urlparse
 
 uri=st.secrets.db_credentials.URI
