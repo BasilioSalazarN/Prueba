@@ -1,7 +1,7 @@
 import numpy as np
 import streamlit as st
 import pandas as pd
-import psycopg2
+import psycopg2-binary
 from urllib.parse import urlparse
 
 uri=st.secrets.db_credentials.URI
