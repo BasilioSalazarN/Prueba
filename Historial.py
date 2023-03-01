@@ -2,7 +2,6 @@
 import numpy as np
 import streamlit as st
 import pandas as pd
-import psycopg2
 from datetime import datetime
 import pytz
 import plotly.graph_objects as go
