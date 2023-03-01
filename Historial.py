@@ -18,7 +18,7 @@ data_1_r=pd.read_sql(f"select cast(id as integer),marca,usuario,nombre,horario,p
 data_2_r = data_1_r.groupby(["nombre", "fecha"], as_index=False)["horas"].agg(np.sum)
   
 data_1_c = pd.read_sql(f"select cast(id as integer),marca,usuario,nombre,puesto,supervisor,fecha,tema,horas,reporte from capacitaciones", con)
-data_2_C = data_1_c.groupby(["nombre", "fecha"], as_index=False)["horas"].agg(np.sum)
+data_2_c = data_1_c.groupby(["nombre", "fecha"], as_index=False)["horas"].agg(np.sum)
 
 data_1_o = pd.read_sql(f"select cast(id as integer),marca,usuario,nombre,puesto,supervisor,fecha,motivo,horas,observaciones,reporte from otros_registros", con)
 data_2_o = data_1_o.groupby(["nombre", "fecha"], as_index=False)["horas"].agg(np.sum)
