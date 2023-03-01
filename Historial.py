@@ -36,4 +36,5 @@ nombre= nombre_r + nombre_c + nombre_o
 d = {'col1':nombre}
 df = pd.DataFrame(data=d)
 
-st.dataframe(d=df)
+placeholder19_7 = st.empty()
+historial_7_data_2= placeholder19_7.dataframe(data=df)
