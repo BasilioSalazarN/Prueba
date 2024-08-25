@@ -32,7 +32,7 @@ numpy==2.1.0
 openpyxl==3.1.1
 packaging==23.0
 pandas==1.4.4
-Pillow==9.4.0
+Pillow<=9.4.0
 pip-upgrader==1.4.15
 pipreqs==0.4.11
 platformdirs==2.6.2
